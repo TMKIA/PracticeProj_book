@@ -31,7 +31,6 @@ import java.util.List;
 @RequestMapping("/upload")
 @SessionAttributes(value = {"loginUser"})
 public class UploadController {
-
     @Resource(name = "uploadServiceImpl")
     private UploadService uploadService;
 
