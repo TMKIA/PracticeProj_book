@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.example.dao.UploadDao">
+    <insert id="saveUpload" parameterType="org.example.entity.Upload">
+        insert into upload(userid,path,filename) values(#{userid},#{path},#{filename})
+    </insert>
+
+    <select id="checkOneUpload" resultType="integer" parameterType="org.example.entity.Upload">
+        select id from upload where userid=#{userid} and path=#{path} and filename=#{filename}
+    </select>
+
+    <delete id="deleteUpload" parameterType="org.example.entity.Upload">
+        delete from upload where userid=#{userid} and path=#{path} and filename=#{filename}
+    </delete>
+
+</mapper>  

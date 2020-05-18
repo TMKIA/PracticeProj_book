@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.example.dao.LoginDao">
+    <select id="checkLogin" resultType="org.example.entity.Login">
+        select * from login where (name=#{loginName,jdbcType=VARCHAR} or telephone=#{loginName,jdbcType=VARCHAR}) and password=#{passWord,jdbcType=VARCHAR}
+    </select>
+
+    <update id="changePwd" >
+        update login set password=#{newPwd} where (name=#{userName,jdbcType=VARCHAR} or telephone=#{userName,jdbcType=VARCHAR}) and password=#{oldPwd,jdbcType=VARCHAR}
+    </update>
+</mapper>
