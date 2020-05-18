@@ -40,8 +40,6 @@ public class UploadController {
         long startTime = System.currentTimeMillis();    //用于计时
         Upload newUpload = new Upload(loginUser.getId());    //文件上传信息
         List<String> fileNameList = new ArrayList<>();    //文件名列表
-
-
         //将当前上下文初始化给  CommonsMultipartResolver （多部分解析器）
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(
                 request.getSession().getServletContext());
