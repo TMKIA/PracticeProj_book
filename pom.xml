@@ -21,6 +21,7 @@
     <spring.version>5.0.3.RELEASE</spring.version>
     <!--mybatis版本号 old:3.0.1-->
     <mybatis.version>3.4.4</mybatis.version>
+    <baiduAip.version>4.12.0</baiduAip.version>
   </properties>
 
   <dependencies>
@@ -189,6 +190,13 @@
       <groupId>commons-fileupload</groupId>
       <artifactId>commons-fileupload</artifactId>
       <version>1.3.3</version>
+    </dependency>
+
+    <!--百度AIP-->
+    <dependency>
+      <groupId>com.baidu.aip</groupId>
+      <artifactId>java-sdk</artifactId>
+      <version>${baiduAip.version}</version>
     </dependency>
   </dependencies>
 
