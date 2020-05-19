@@ -7,7 +7,7 @@
 <html>
 <head>
 	<title>图书管理系统</title>
-	<link rel="stylesheet" type="text/css" href="<%=basePath%>/css/mainDiv.css" media="all"/>
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>/resources/css/mainDiv.css" media="all"/>
 </head>
 <body>
 <div class="loginDiv">
